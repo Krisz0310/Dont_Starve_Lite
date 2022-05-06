@@ -1,5 +1,6 @@
 package game.dont_starve_lite;
 
+import game.dont_starve_lite.starting.NewGame;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,19 +9,19 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Objects;
 
 public class Launcher extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("NewGame.fxml")));
-        Scene scene = new Scene(root);
-        Image ikon = new Image("icon.png");
-        stage.getIcons().add(ikon);
+        FXMLLoader loader =new FXMLLoader(Launcher.class.getResource("NewGame.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root, 800, 600);
+        NewGame gomb = loader.getController();
+        gomb.adatSzerez(stage);
+        scene.getStylesheets().addAll("file:css/NewGame.css");
+        stage.getIcons().add(new Image("file:kepek/hatter/icon.png"));
         stage.setTitle("Don't Starve Lite");
-        stage.setWidth(610);
-        stage.setHeight(530);
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

@@ -1,0 +1,69 @@
+
+.hatter {
+    -fx-background-image: url("../kepek/hatter/wallpaper.jpg");
+}
+
+.exithatter {
+    -fx-background-image: url("../kepek/hatter/exitHatter.png");
+}
+
+.gomb {
+    -fx-font-size: 28;
+    -fx-text-fill: "white";
+    -fx-font-family: "Lucida Calligraphy";
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 12px;
+    -fx-padding: 4px;
+}
+
+.gomb:hover {
+    -fx-background-color: silver;
+}
+
+.kilepes {
+    -fx-font-size: 28;
+    -fx-text-fill: "white";
+    -fx-font-family: "Lucida Calligraphy";
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 12px;
+    -fx-padding: 4px;
+}
+
+.kilepes:hover {
+    -fx-background-color: silver;
+}
+
+
+.nem {
+    -fx-font-size: 19;
+    -fx-text-fill: "white";
+    -fx-font-family: "Lucida Calligraphy";
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 12px;
+    -fx-padding: 4px;
+}
+
+.igen {
+    -fx-font-size: 19;
+    -fx-text-fill: "white";
+    -fx-font-family: "Lucida Calligraphy";
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 12px;
+    -fx-padding: 4px;
+}
+
+.nem:hover {
+    -fx-background-color: silver;
+}
+
+.igen:hover {
+    -fx-background-color: silver;
+}
